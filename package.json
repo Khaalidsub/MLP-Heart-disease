@@ -1,0 +1,23 @@
+{
+	"name": "mlp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"@types/mathjs": "^6.0.5",
+		"@types/node": "^14.0.13",
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"concurrently": "^5.2.0",
+		"mathjs": "^7.0.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"start:build": "tsc -w",
+		"start:run": "nodemon build/index.js",
+		"start": "concurrently npm:start:*"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
